@@ -1,5 +1,8 @@
 import React from 'react'
 import '../globals.css'
+import { Content } from 'next/font/google'
+import Containerin from './Containerin'
+
 
 const SideBar = () => {
   return (
@@ -9,13 +12,12 @@ const SideBar = () => {
   
 
 
-<div class="min-h-screen bg-gray-100">
-  <div class="sidebar min-h-screen w-[3.35rem] overflow-hidden border-r hover:w-56 hover:bg-white hover:shadow-lg">
+<div class="min-h-screen flex bg-gray-100">
+
+  <div class="sidebar min-h-screen w-[4rem] overflow-hidden border-r hover:w-72 hover:bg-white hover:shadow-lg">
     <div class="flex h-screen flex-col justify-between pt-2 pb-6">
       <div>
-        {/* <div class="w-max p-2.5">
-          <img src="https://tailus.io/images/logo.svg" class="w-32" alt=""/>
-        </div> */}
+       
         <ul class="mt-6 space-y-2 tracking-wide">
           <li class="min-w-max">
             <a href="#" aria-label="dashboard" class="relative flex items-center space-x-4 bg-gradient-to-r from-sky-600 to-cyan-400 px-4 py-3 text-white">
@@ -72,9 +74,15 @@ const SideBar = () => {
           </svg>
           <span class="group-hover:text-gray-700">Settings</span>
         </a>
+
       </div>
     </div>
   </div>
+  <div className='m-8'>
+
+  <Containerin/>
+  </div>
+
 </div>
     
     </>
