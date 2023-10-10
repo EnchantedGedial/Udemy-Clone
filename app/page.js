@@ -1,12 +1,15 @@
-import Image from 'next/image'
-import NavBar from './Components/NavBar'
-import SideBar from './Components/SideBar'
+import { Container } from "postcss";
+import Containerin from "../Components/Containerin";
+
+
 
 
 export default function Home() {
   return<>
-  <NavBar/>
-  <SideBar/>
- 
+<div className='m-8 flex'>
+
+
+</div>
+
   </>
 }
