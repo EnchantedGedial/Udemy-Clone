@@ -7,7 +7,8 @@ import { usePathname } from 'next/navigation';
 const NavBar = () => {
   const pathname = usePathname();
   const isTeacher = pathname?.startsWith('/teacher');
-  const isCoursePage = pathname?.startsWith('/courses')
+  const isPlayerPage = pathname?.includes('/chapter')
+  
   return (
     <>
     
@@ -23,25 +24,25 @@ const NavBar = () => {
       <Link href={'/'} class="mr-5 hover:text-gray-900">First Link</Link>
   
     </nav>
-    <div>
+    <div className='flex'>
   
-      {isTeacher|| isCoursePage ? (
+      {isTeacher|| isPlayerPage ? (
           <Link href="/">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-10" >
               Exit
             </button>
           </Link>
         ) :  (
           <Link href="/teacher/courses">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-10">
               Teacher mode
             </button>
           </Link>
         ) }
      
+    <UserButton class="text-8xl ml-10" afterSignOutUrl="/"/>
     </div>
-    <UserButton class="font-4xl" afterSignOutUrl="/"/>
-    <Link href={"/sign-in"} class=" m-4 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign -in</Link>
+    {/* <Link href={"/sign-in"} class=" m-4 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign -in</Link> */}
     {/* <Link href={'/sign-up'} class=" m-4  inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign -up</Link> */}
   </div>
 </header>

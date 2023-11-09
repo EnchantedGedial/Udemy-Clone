@@ -1,12 +1,10 @@
 import React from 'react'
+import { UserButton } from '@clerk/nextjs'
 
 const page = () => {
-  return (
-    <div>
-        I am Teacher Route
-      
-    </div>
-  )
+  return <>
+  
+  </>
 }
 
 export default page
