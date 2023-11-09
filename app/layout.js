@@ -22,16 +22,11 @@ export default function RootLayout({ children }) {
   
       <body className={inter.className}>
         <NavBar/>
-        <div className='flex'>
+        <div className="flex">
         <SideBar/>
-        <div className='m-8'>
-
-          <Containerin />
-        </div>
-
-         
-        </div>
         {children}
+        </div>
+      
         </body>
     </html>
     </ClerkProvider>

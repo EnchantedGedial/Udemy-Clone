@@ -1,15 +1,16 @@
-import { Container } from "postcss";
-import Containerin from "../Components/Containerin";
+import SideBar from '@/Components/SideBar'
+import React from 'react'
 
+const page = () => {
+  return <>
+  <div className="flex">
 
+  <div>I am the home page</div>
 
-
-export default function Home() {
-  return<>
-<div className='m-8 flex'>
-
-
-</div>
-
-  </>
+  </div>
+      
+    </>
+  
 }
+
+export default page

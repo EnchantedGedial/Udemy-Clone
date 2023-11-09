@@ -48,7 +48,7 @@ const SideBar = () => {
 
       <div class="min-h-screen flex bg-gray-100">
 
-        <div class="sidebar min-h-screen w-[4rem] overflow-hidden border-r hover:w-72 hover:bg-white hover:shadow-lg">
+        <div class="sidebar min-h-screen w-[3rem] overflow-hidden border-r hover:w-72 hover:bg-white hover:shadow-lg">
           <div class="flex h-screen flex-col justify-between pt-2 pb-6">
             <div>
 
